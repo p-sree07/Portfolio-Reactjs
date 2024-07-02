@@ -1,0 +1,150 @@
+
+@import "../../vars.css";
+
+:root {
+  --neon-color: #7d7d7d; /* Light black neon color */
+}
+
+.container {
+  color: var(--color-text);
+  margin-top: 79px;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color:rgba(6, 6, 6, 0.38);
+  border-radius: 4%;
+  padding: 2rem; /* Add some padding for better spacing */
+  box-shadow: 0 0 10px var(--neon-color), 0 0 20px var(--neon-color), 0 0 30px var(--neon-color), 0 0 40px var(--neon-color);
+}
+
+
+.title {
+  color: var(--color-text);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration:underline;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 14px;
+}
+
+.skills {
+    width: 50%; /* Ensure the container takes full width of its parent */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; /* Reduce gap for closer spacing */
+  }
+  
+  .skill {
+    flex: 1 1 calc(33.33% - 10px); /* Three items per row */
+    max-width: calc(33.33% - 10px); /* Ensure items do not exceed the calculated width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px; /* Reduce gap between elements within each skill */
+  }
+  
+  .skillImageContainer {
+    background-color: var(--color-secondary);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+  }
+  
+  .skillImageContainer img {
+    width: 75px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .skill {
+      flex: 1 1 calc(50% - 10px); /* Two items per row on smaller screens */
+      max-width: calc(50% - 10px);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .skill {
+      flex: 1 1 100%; /* One item per row on very small screens */
+      max-width: 100%;
+    }
+  }
+  
+.skill p {
+  font-size: 25px;
+  font-family: var(--font-roboto);
+  font-weight: 500;
+}
+
+.history {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.historyItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 17px;
+  background: #19376d;
+  background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.historyItem img {
+  width: 50px;
+}
+
+.historyItemDetails {
+  font-family: var(--font-roboto);
+}
+
+.historyItemDetails h3 {
+color: yellow;
+  font-size: 25px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.historyItemDetails p {
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.historyItemDetails ul {
+  margin-top: 6px;
+  list-style-position: inside;
+  font-size: 25px;
+  list-style-type: disc;
+  margin-left: 17px;
+}
+
+@media screen and (max-width: 830px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+  }
+
+  .skills {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .history {
+    width: 100%;
+    gap: 9px;
+  }
+}

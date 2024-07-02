@@ -1,0 +1,119 @@
+@import "../../vars.css";
+
+.navbar {
+  position: fixed; /* Ensures the navbar stays at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 8%; /* Reduced padding to make the navbar thinner */
+  background-color: #2d456e;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.7); /* Transparent background on scroll */
+  padding: 5px 10%; /* Further reduced padding on scroll */
+}
+
+.logo {
+  margin-right: auto; /* Align the logo to the left */
+  
+}
+
+.logo img {
+  height: 50px; /* Adjust the logo size as needed */
+  border-radius: 10%;
+ 
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-text);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  transition: color 0.3s ease;
+}
+
+.title:hover {
+  color: var(--color-accent);
+  text-shadow: 0 0 10px var(--color-accent);
+}
+
+.menuBtn {
+  display: none;
+  font-size: 40px;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.menuBtn:hover {
+  color: var(--color-accent);
+}
+
+.menu {
+  display: flex;
+  align-items: center; /* Center align the menu items */
+}
+
+.menuItems {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.menuItems a {
+  font-size: 20px;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.menuItems a:hover {
+  color: var(--color-accent);
+  transform: scale(1.1);
+  text-shadow: 0 0 10px var(--color-accent);
+}
+
+@media screen and (max-width: 830px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 5%;
+  }
+
+  .menu {
+    position: absolute;
+    right: 5%;
+    top: 40px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 11px;
+    z-index: 3;
+    background: var(--color-secondary);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+  }
+
+  .menuBtn {
+    display: block;
+  }
+
+  .menuItems {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .menuOpen {
+    display: flex;
+  }
+}

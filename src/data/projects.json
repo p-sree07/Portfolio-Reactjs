@@ -1,0 +1,35 @@
+[
+    {
+      "title": "car_price_prediction",
+      "imageSrc": "projects/project1.jpeg",
+      "description":" Utilized machine learning for accurate car price predictions, enhancing decision-making in the automotive industry.",
+      "skills": ["ML", "Data Science", "Python"],
+      
+      "source": "https://github.com/p-sree07/car_price_prediction.git"
+    },
+    {
+      "title": "Wellness_verify",
+      "imageSrc": "projects/project-2.jpeg",
+      "description": "Our webpage promotes:Good Health and Well-being, offering healthcare resources, preventive measures, and connections to health professionals.",
+      "skills": ["HTML","CSS","Javascript"],
+      
+      "source":"https://github.com/p-sree07/wellness_verify.git"
+    },
+    {
+      "title": "HR_Analytics_Dashboard",
+      "imageSrc": "projects/project3.jpeg",
+      "description": "Utilized Power BI for HR Analytics, providing insightful visualizations and data-driven decision-making for human resources management.",
+      "skills": ["Power BI","Data Science"],
+      "source": "https://github.com/p-sree07/HR_Analytics_dashboard.git"
+    },
+    {
+        "title": "crop_prediction",
+        "imageSrc": "projects/project4.jpg",
+        "description":"Implemented machine learning and artificial intelligence to forecast crop yields, enhancing agricultural planning and productivity",
+        "skills": ["ML", "Data Science", "Python"],
+        
+        "source": "https://github.com/p-sree07/crop_prediciton.git"
+      }
+      
+     
+  ]

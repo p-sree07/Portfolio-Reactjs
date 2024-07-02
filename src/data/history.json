@@ -1,0 +1,20 @@
+[
+    {
+        "role": "Virtual Internship",
+        "organisation": "AICTE - EduSkills",
+        "course":"Mathworks Virtual Internship Program",
+        "startDate": "April, 2024",
+        "endDate": "June, 2024",
+        "imageSrc": "history/logo2.png"
+      },
+    {
+        "role": "Virtual Internship",
+        "organisation": "AICTE",
+        "course":"Data Science Master Virtual Internship Program",
+        "startDate": "May, 2023",
+        "endDate": "September, 2023",
+        "imageSrc": "history/logo.jpeg"
+      }
+   
+    
+  ]
